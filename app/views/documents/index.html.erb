@@ -5,6 +5,7 @@
     <tr>
       <th>Name</th>
       <th>User</th>
+      <th>Content</th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= document.name %></td>
         <td><%= document.user_id %></td>
+        <td><%= document.content %></td>
         <td><%= link_to 'Show', document %></td>
         <td><%= link_to 'Edit', edit_document_path(document) %></td>
         <td><%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -40,3 +42,5 @@
 <br />
 
 <%= link_to 'New Document', new_document_path %>
+
+Hello world.
