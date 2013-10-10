@@ -34,8 +34,11 @@ end
 
 gem 'devise'
 
-group :test do
+group :test, :development do
   gem 'rspec-rails'
+end
+
+group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
 end
